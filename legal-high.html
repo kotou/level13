@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>legal high</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_489913_yifj609gbf1ug14i.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        font: 14px/1.5 Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    header, main, footer {
+        min-width: 1200px;
+    }
+
+    header {
+        background: url(http://ww1.sinaimg.cn/large/b44f5fbfgy1flwnkzevhyj20zq0ye1kx.jpg) center no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        position: relative;
+    }
+
+    header .layout {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    header .logo {
+        font-size: 50px;
+        color: #fed136;
+        float: left;
+        margin-left: 15px;
+    }
+
+    header .nav > li {
+        float: left;
+    }
+
+    header .nav a {
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 12px;
+        margin: 20px 15px 10px 15px;
+    }
+
+    .nav {
+        float: right;
+    }
+
+    header .nav a:hover {
+        background: #fed136;
+        border-radius: 4px;
+    }
+
+    header .ct {
+        color: #fff;
+        text-align: center;
+    }
+
+    header .ct {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .ct p {
+        padding-top: 100px;
+        font-size: 40px;
+        margin-bottom: 25px;
+        font-style: italic;
+    }
+
+    header .ct h1 {
+        font-size: 75px;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    header .ct .button {
+        color: #fff;
+        background: #fed136;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 20px 40px;
+    }
+
+    header .ct .button:hover {
+        background: #ffca13;
+    }
+
+    #plot {
+        background-color: #fff;
+    }
+
+    #plot > div {
+        text-align: center;
+        padding: 150px 0;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #plot .headline > h2 {
+        font-size: 40px;
+    }
+
+    #plot .headline > p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: #777;
+        font-style: italic;
+    }
+
+    #plot .watch {
+        float: left;
+        width: 33.33%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #plot .thumbnail {
+        font-size: 110px;
+        color: #fed136;
+    }
+
+    #plot .watch h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #plot .watch .summary {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    #role {
+        background-color: #f7f7f7;
+    }
+
+    #role > div {
+        width: 1200px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #role .character > h2 {
+        font-size: 40px;
+    }
+
+    #role .character > p {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 75px;
+        font-style: italic;
+        color: #777;
+    }
+
+    #role .container {
+        float: left;
+        width: 33.33%;
+        height: 400px;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #role .container img {
+        width: 100%;
+    }
+
+    #role .figcaption {
+        text-align: center;
+        padding: 25px;
+    }
+
+    #role .figcaption > h4 {
+        font-size: 18px;
+    }
+
+    #role .figcaption > p {
+        font-size: 16px;
+        color: #777;
+    }
+
+    #role .interlinkage > a {
+        position: relative;
+        display: block;
+        font-size: 0;
+    }
+
+    #role .bcacdrop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(254, 209, 54, .9);
+        display: none;
+    }
+
+    #role .bcacdrop > i {
+        color: #fff;
+        position: absolute;
+        display: inline-block;
+        font-size: 60px;
+        top: 50%;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -45px;
+    }
+
+    #role .interlinkage a:hover .bcacdrop {
+        display: block;
+    }
+
+    #role .figcaption {
+        height: 180px;
+        background-color: #fff;
+    }
+
+    #intelligence {
+        background-color: #fff;
+    }
+
+    #intelligence > .event {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #intelligence .paging h2 {
+        font-size: 40px;
+    }
+
+    #intelligence .paging p {
+        font-size: 16px;
+        font-style: italic;
+        color: #777;
+        margin-top: 20px;
+        margin-bottom: 75px;
+    }
+
+    #intelligence img {
+        width: 150px;
+        height: 150px;
+        border: 7px solid #d4f6f9;
+        border-radius: 50%;
+        float: right;
+    }
+
+    #intelligence .introduce h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.1;
+    }
+
+    #intelligence .introduce p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    #intelligence .content {
+        margin-bottom: 150px;
+        position: relative;
+    }
+
+    #intelligence .introduce {
+        margin-left: 170px;
+        margin-right: 170px;
+        height: 150px;
+    }
+
+    #intelligence .content:nth-child(odd) img {
+        float: right;
+    }
+
+    #intelligence .content:nth-child(even) img {
+        float: left;
+    }
+
+    #intelligence .content:nth-child(odd) {
+        padding-right: calc(50% - 75px);
+    }
+
+    #intelligence .content:nth-child(even) {
+        padding-left: calc(50% - 75px);
+    }
+
+    #intelligence .content:nth-child(odd) .introduce {
+        text-align: right;
+    }
+
+    #intelligence .content:nth-child(even) .introduce {
+        text-align: left;
+    }
+
+    #intelligence .content:before {
+        content: '';
+        display: inline-block;
+        background-color: #d4f6f9;
+        position: absolute;
+        width: 2px;
+        height: 150px;
+        left: 50%;
+        top: 150px;
+    }
+
+    #intelligence .event .end {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 7px solid #d4f6f9;
+        border-radius: 50%;
+        background-color: #7ADAF8;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 35px;
+    }
+
+    #performer {
+        background-color: #f7f7f7;
+    }
+
+    #performer > div {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #performer .as > h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #performer .as > p {
+        font-size: 16px;
+        margin-top: 20px;
+        color: #777;
+        font-style: italic;
+    }
+
+    #performer .act > img {
+        width: 240px;
+        height: 240px;
+        border: 7px solid #fff;
+        border-radius: 50%;
+    }
+
+    #performer .act {
+        float: left;
+        width: 33.33%;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    #performer .act h4 {
+        margin-top: 20px;
+    }
+
+    #performer .act p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    #performer .act li {
+        display: inline-block;
+    }
+
+    #performer .act li > a {
+        font-size: 40px;
+        color: black;
+        padding: 0 5px;
+    }
+
+    #performer .act li > a:hover {
+        color: #fed136;
+    }
+
+    #entry {
+        background-color: #fff;
+        min-height: 600px;
+        background: url(http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0dfsk3sqj20vi0hsaed.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+    #entry > .contact {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    #entry .evaluate h2 {
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    #entry .evaluate p {
+        font-style: italic;
+        color: #777;
+        margin-bottom: 75px;
+    }
+
+    #entry .login input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    #entry .article textarea {
+        width: 100%;
+        height: 190px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #entry .login {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #entry .article {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #entry .cinecism {
+        float: left;
+        width: 50%;
+    }
+
+    #entry .bt {
+        display: inline-block;
+        color: #fff;
+        background: #fed136;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 20px 40px;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+
+    #entry .bt:hover {
+        background: #ffca13;
+    }
+
+    footer {
+        background-color: #fff;
+    }
+
+    footer > .footnotes {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer .tag {
+        float: left;
+        width: 33.33%;
+    }
+
+    footer ul > li {
+        display: inline-block;
+    }
+
+    footer ul > li > a {
+        font-size: 40px !important;
+        color: black;
+        padding: 0 5px;
+    }
+
+    footer .tag > a {
+        color: #fed136;
+    }
+
+    footer ul > li > a:hover {
+        color: #fed136;
+    }
+
+    footer .tag > a:hover {
+        text-decoration: underline;
+        color: #ffca13;
+    }
+
+    footer .tag > p {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    footer .copyright {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    footer .tag > a {
+        padding-left: 15px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="clearfix layout">
+            <a class="logo" href="">start project</a>
+            <ul class="nav">
+                <li><a href="">剧情看点</a></li>
+                <li><a href="">角色介绍</a></li>
+                <li><a href="">分集详情</a></li>
+                <li><a href="">角色饰演</a></li>
+                <li><a href="">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="ct layout layout">
+            <p>LEGAL HIGH</p>
+            <h1>胜者即是正义</h1>
+            <a href="" class="button">立即观看</a>
+        </div>
+    </header>
+    <main id="plot">
+        <div class="clearfix">
+            <div class="headline">
+                <h2>剧情看点</h2>
+                <p>剧中精彩看点</p>
+            </div>
+            <div class="watch">
+                <p class="thumbnail iconfont icon-1"></p>
+                <h4>正义与律师</h4>
+                <p class="summary">黛真知子以道德的层面去剖析正义，为了个人道德标准做超出律师职能的事，
+                古美门研介遵守律师职责，为自己的代理人争取权益，按照法律允许的范围去做事。</p>
+            </div>
+            <div class="watch">
+                <p class="thumbnail iconfont icon-2"></p>
+                <h4>真相与证据</h4>
+                <p class="summary">诉讼小黛追求整个事件的真相，古美门只找出证据维护代理人的权益，无所谓真相与否，小黛问古美门研介：那真相何在呢？</p>
+            </div>
+            <div class="watch">
+                <p class="thumbnail iconfont icon-3"></p>
+                <h4>正义与善</h4>
+                <p class="summary">小黛跟随古美门通过一次次诉讼代理渐渐想明白了一个问题：“正义能不能依附在一个善的目的上，以达到公正和正义”。</p>
+            </div>
+        </div>
+    </main>
+    <main id="role">
+        <div>
+            <div class="character">
+                <h2>角色介绍</h2>
+                <p>本剧中登场的角色</p>
+            </div>
+            <div class="wrap clearfix">
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0ce4y1pjj20sg0g0mxq.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>古美门研介</h4>
+                        <p>38岁，为人毒舌、刻薄、功利、爱名、爱利、爱女人的“人格破绽”律师，
+                        由于打官司时不择手段，所以诉讼胜率100%；个人信条“胜利=正义”“诉讼就是游戏”。</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0en5as1wj21400mimyk.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>黛真知子</h4>
+                        <p>视锄强扶弱为使命，有超强的正义感，坚持信念绝不妥协，拼命读书通过司法考试的热血新人律师。</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0czrrvw1j20jg0aydhi.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>服部</h4>
+                        <p>古美门律师的私人管家，
+                            精通厨艺、种植、音律、书法等各项技能，但总说自己的技能“微不足道”“不值一提”，
+                        总会用各种比喻以及深奥的话语引导小黛发现线索。</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0dyl6475j20qo0f0toy.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>加贺兰丸</h4>
+                        <p>作为古美门的侦察员而活动的青年，正式身份是一个没有人气的演员，
+                        因为在过去某个人生阶段陷入某件发生的事件中而被古美门所救，从此以后被古美门雇佣，被古美门称为“忍者”。</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0domh2nyj20re0fe75h.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>三木长一郎</h4>
+                        <p>过去和古美门有着交集却异常燃起敌意的大型律师事务所所长，
+                        因古美门的原因导致沙织之死而憎恨古美门，并发誓要打败古美门为沙织报仇，也将此看做是自己的赎罪方式。</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="interlinkage">
+                        <a href="">
+                            <div>
+                                <div class="bcacdrop">
+                                    <i class="iconfont icon-cross"></i>
+                                </div>
+                                <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0e034wtmj20qo0f0tt8.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="figcaption">
+                        <h4>泽地君江</h4>
+                        <p>以挑起古美门和三木之间的直接战争为乐，为此甚至做出违背自身立场的事情，
+                        同时也拥有强大的情报搜集能力和拳脚功夫，是个性感、古怪的女人。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main id="intelligence">
+        <div class="event">
+            <div class="paging">
+                <h2>分集详情</h2>
+                <p>每一集的标题和剧情概述</p>
+            </div>
+            <div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09f1gbb3j20u10u0798.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第一集</h5>
+                        <h5>杀人犯</h5>
+                        <p>黛真知子为了给自己的辩护人坪仓洗脱杀人犯的嫌疑，以在事务所内工作还诉讼费为代价找到古美门作为辩护律师。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09i0wnz0j20u00u0mzz.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第二集</h5>
+                        <h5>歌曲剽窃</h5>
+                        <p>地下乐团自爆魂的主唱花江无意中发现当红流行歌手的一首歌有抄袭嫌疑。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09ipyxzwj20u10u0djg.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第三集</h5>
+                        <h5>跟踪狂/被驱赶的球迷</h5>
+                        <p>黛接受了被认定为跟踪狂的榎戸的脱罪委托，而黛的对手则是自己的大学老师相沢，遇到相沢的黛想起了自己的过去，从而鼓起信心要为榎戸脱罪。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09j8yfqej20u10u0gos.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第四集</h5>
+                        <h5>日照权</h5>
+                        <p>小区的旁边盖起了高层公寓，居民们的日照权遭到了侵犯。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09joa9mgj20u00u0dj1.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第五集</h5>
+                        <h5>议员贿赂</h5>
+                        <p>议员富坚因为受贿而被判刑，富坚曾花重金组成的最强律师团全败并解散。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09k88b8yj20u00u0tc9.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第六集</h5>
+                        <h5>离婚调停</h5>
+                        <p>明星典范夫妇的背后原来是婚姻不幸。曾受到国民关注的模范夫妻却另有隐情，终于难耐家庭暴力而引发了离婚调停官司。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09knqxf8j20u00u0who.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第七集</h5>
+                        <h5>遗产继承</h5>
+                        <p>骨肉相争，潜藏在酱油家族的秘密与谎言。徳松酱油的当家去世，留下了三份遗嘱，三份遗嘱都有效，但是订立时间却都不同，子辈三人为了利益而竞相聘请律师争夺遗产。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09l009tej20u10u0413.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第八集</h5>
+                        <h5>监护权</h5>
+                        <p>取抚养权，天才童星与母亲断绝关系的判决。童星拥有着光鲜的外表，却有着鲜为人知的幕后生活。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09l8mx0xj20u00u0q5r.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第九集</h5>
+                        <h5>环境污染</h5>
+                        <p>仙羽化学第四工厂排除的废水中含有碳X，这种物质是否有害尚不清楚，然而，绢美村的村民们却一个接一个的倒下了。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09linzcnj20u10u0q94.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第十集</h5>
+                        <h5>关键证人</h5>
+                        <p>仙羽化学污染案的官司进入白热化，双方使出各种手段，只为了赢得最后的胜利。</p>
+                    </div>
+                </div>
+                <div class="content clearfix">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm09lqr20zj20u10u0jv0.jpg" alt="">
+                    <div class="introduce">
+                        <h5>第十一集</h5>
+                        <h5>报复性解雇</h5>
+                        <p>一年后，已经离开古美门事务所的黛与八木沼带着诉讼找到古美门请求帮助，古美门答应了她的请求。但是诉讼将要开始时却发现古美门律师竟然和三木律师联手成为了对方的辩护律师。</p>
+                    </div>
+                </div>
+                <p class="end">STAY TUNED FOR NEXT SEASON!</p>
+            </div>
+        </div>
+    </main>
+    <main id="performer">
+        <div>
+            <div class="as">
+                <h2>角色饰演</h2>
+                <p>剧中主要角色的饰演者</p>
+            </div>
+            <div class="clearfix">
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1flz7nym76vj20ay0axgn0.jpg" alt="">
+                    <h4>堺雅人</h4>
+                    <p>古美门研介</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1fm0dpto9b2j20j10j1abp.jpg" alt="">
+                    <h4>新垣结衣</h4>
+                    <p>黛真知子</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1flz9yrst26j208c08c4le.jpg" alt="">
+                    <h4>里见浩太朗</h4>
+                    <p>服部</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1flz7cchdeyj208w08vaay.jpg" alt="">
+                    <h4>生濑胜久</h4>
+                    <p>三木长一郎</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1flz7dcf9y4j20d70d8wmd.jpg" alt="">
+                    <h4>小池荣子</h4>
+                    <p>泽地君江</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="act">
+                    <img src="http://ww1.sinaimg.cn/large/b44f5fbfgy1flz7dnhlz2j20i80i9q5q.jpg" alt="">
+                    <h4>田口淳之介</h4>
+                    <p>加贺兰丸</p>
+                    <ul>
+                        <li>
+                            <a class="iconfont icon-twitter" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-facebook" href=""></a>
+                        </li>
+                        <li>
+                            <a class="iconfont icon-in" href=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main id="entry">
+        <div class="contact">
+            <div class="evaluate">
+                <h2>联系我们</h2>
+                <p>将你对本剧的评价发送给我们</p>
+            </div>
+            <form action="#" method="post">
+                <div class="clearfix">
+                    <div class="login cinecism">
+                        <input type="text" name="username" placeholder="姓名">
+                        <input type="text" name="password" placeholder="邮箱">
+                        <input type="text" name="phone" placeholder="电话">
+                    </div>
+                    <div class="article cinecism">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="消息"></textarea>
+                    </div>
+                </div>
+                <button class="bt">提交</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footnotes clearfix">
+            <div class="tag">
+                <p>Copyright © Your Website 2017</p>
+            </div>
+            <ul class="tag">
+                <li>
+                    <a class="iconfont icon-twitter" href=""></a>
+                </li>
+                <li>
+                    <a class="iconfont icon-facebook" href=""></a>
+                </li>
+                <li>
+                    <a class="iconfont icon-in" href=""></a>
+                </li>
+            </ul>
+            <div class="tag copyright">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
